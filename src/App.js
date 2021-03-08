@@ -1,6 +1,6 @@
 import React from 'react'
 import {ChatEngine} from 'react-chat-engine'
-import NewChatFeed from './components/NewChatFeed'
+import ChatFeed from './components/ChatFeed'
 
 const App = () => {
   return (
@@ -10,7 +10,7 @@ const App = () => {
       "
       userName="sumonshekh"
       userSecret="123456"
-      renderChatFeed ={(chatProps)=>{<NewChatFeed {...chatProps}/>}}
+      renderChatFeed={(chatAppProps) => {<ChatFeed {...chatAppProps} />}}
 
     />
   )
